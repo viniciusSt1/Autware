@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="shortcut icon" href="./assets/IMAGEM.svg" type="image/x-icon">
+    <title>AUTWARE</title>
+</head>
+<body>
+    <header class="active">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Autware-logo</a>
+            </div>
+            <nav id="autoNav">
+                <div class="menu">
+                    <ul>
+                        <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                        <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+                        <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                        <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
+                        <rect width="21.8368" height="3.19463" rx="1.59732" fill="#FFFFFF" />
+                        <rect y="7.18787" width="21.8368" height="3.19463" rx="1.59732" fill="#FFFFFF" />
+                        <rect y="13.8053" width="22" height="3.19463" rx="1.59732" fill="#FFFFFF" />
+                    </svg>
+                </button>
+
+                <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+                    <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="26.1309" height="3.19463" rx="1.59732"
+                            transform="matrix(-0.707107 0.707107 0.707107 0.707107 18.7278 0.434326)"
+                            fill="white" />
+                        <rect x="2.50952" y="0.434326" width="26.1309" height="3.19463" rx="1.59732"
+                            transform="rotate(45 2.50952 0.434326)" fill="white" />
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="home-text">
+            <h4>autware</h1>
+            <h1>A Chave para Otimizar Processos e <span>Maximizar</span> a <span>Eficiência</span>.</h1>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about__main-text">
+                <h2>Inovando hoje para liderar o amanhã. </h2>
+            </div>
+
+            <div class="about__us">
+                <div class="about__us__text">
+                    <h3>Descubra o<span> Futuro</span></h3>
+                    <p>Na Autware, estamos na vanguarda da inovação. Nossa missão é antecipar as necessidades futuras e liderar com soluções eficientes. Junte-se a nós para moldar um amanhã mais promissor.</p>
+
+                    <div class="about__us__text__more">
+                        <a href="./pages/sobre.html">SAIBA MAIS</a>
+                    </div>
+                </div>
+
+                <div class="about__us__images">
+                    <img class='number' src="./assets/1.svg" alt="Number-one">
+                    <img src="./assets/IMAGEM.svg" alt="Equipe de trabalho">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script defer src="./js/menu.js"></script>
+</body>
+</html>

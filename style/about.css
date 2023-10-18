@@ -1,0 +1,126 @@
+section#about {
+    position: relative;
+}
+
+section#about .container {
+    width: 90%;
+    max-width: 106rem;
+}
+
+section#about .about__main-text {
+    text-transform: uppercase;
+}
+
+section#about .about__main-text h2 {
+    max-width: 75rem;
+    
+    margin: 0 auto;
+
+    font-size: 4.8rem;
+    line-height: 5.5rem;
+    text-align: center;
+    font-family: var( --subtitle-font);
+}
+
+section#about .about__main-text h2::after{
+    content:'';
+    width: 5rem;
+    height: .4rem;
+    display:block;
+    background-color: var(--primary-color);
+
+    margin: 0 auto;
+}
+
+section#about .about__us {
+    margin-top: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section#about .about__us__text h3 {
+    text-transform: uppercase;
+    font-family: var(--title-font);
+    font-size: 6.4rem;
+    line-height: 5.5rem;
+    max-width: 40rem;
+}
+
+section#about .about__us__text h3 span{
+    color:var(--primary-color);
+}
+
+section#about .about__us__text p {
+    font-size: 1.8rem;
+    max-width: 45rem;
+    margin-top: 2.5rem;
+}
+
+section#about .about__us__text a {
+    display: inline-block;
+
+    color: var(--dark-text-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    border-radius: 5px;
+    border: 3px solid var(--primary-color);
+
+    padding: 1rem;
+    margin: 2rem 0;
+
+    transition: .4s;
+}
+
+section#about .about__us__text a:hover{
+    border-color:var(--secondary-color);
+    transition:.4s;
+    background:linear-gradient(#ffffff ,rgba(50,50,50,0.1), #ffffff);
+}
+
+section#about .about__us__images{
+    position: relative;
+}
+
+section#about .about__us__images img.number{
+    position: absolute;
+    right:50%;
+    transform: translate(50%,-50%);
+}
+
+section#about .about__us__images img:last-of-type {
+    width: 50rem;
+}
+
+@media (max-width:840px){
+    section#about .about__main-text h2 {
+        font-size: 2.4rem;
+        line-height: normal;
+    }
+
+    section#about .about__us {
+        flex-direction: column;
+        text-align: center;
+        margin-top:1.6rem;
+    }
+
+    section#about .about__us h3 {
+        display: none;
+    }
+
+    section#about .about__us__text p{
+        font-size: 1.6rem;
+        margin-top:0;
+    }
+
+    section#about .about__us__images{
+        margin: 0 auto;
+    }
+
+    section#about .about__us__images img:last-of-type{
+        width: 30rem;
+    }
+}
