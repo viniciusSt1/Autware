@@ -2,34 +2,25 @@ section#about {
     position: relative;
 }
 
-section#about .container {
-    width: 90%;
-    max-width: 106rem;
-}
-
-section#about .about__main-text {
-    text-transform: uppercase;
-}
-
-section#about .about__main-text h2 {
+section#about h2.title-about {
     max-width: 75rem;
-    
+    letter-spacing: -0.1rem;
     margin: 0 auto;
 
     font-size: 4.8rem;
     line-height: 5.5rem;
     text-align: center;
-    font-family: var( --subtitle-font);
+    font-family: var(--subtitle-font);
 }
 
-section#about .about__main-text h2::after{
+section#about h2.title-about::after{
     content:'';
     width: 5rem;
     height: .4rem;
     display:block;
     background-color: var(--primary-color);
 
-    margin: 0 auto;
+    margin: 1rem auto;
 }
 
 section#about .about__us {
@@ -41,7 +32,6 @@ section#about .about__us {
 }
 
 section#about .about__us__text h3 {
-    text-transform: uppercase;
     font-family: var(--title-font);
     font-size: 6.4rem;
     line-height: 5.5rem;
@@ -95,8 +85,8 @@ section#about .about__us__images img:last-of-type {
     width: 50rem;
 }
 
-@media (max-width:840px){
-    section#about .about__main-text h2 {
+@media (max-width:930px){
+    section#about h2.title-about {
         font-size: 2.4rem;
         line-height: normal;
     }

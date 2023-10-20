@@ -29,7 +29,6 @@ section#home::before{
 
 section#home .home-text {
     color: var(--light-text-color);
-    text-transform: uppercase;
     max-width: 80rem;
 }
 
@@ -41,13 +40,13 @@ section#home .home-text h1 {
     text-align: center;
     font-size: 3.2rem;
     line-height: 4rem;
-    font-weight: 700;
+    font-weight:600;
     color: var(--light-text-color);
 }
 
 section#home .home-text h4 {
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
     font-size:6.4rem;
     color: #FFF2DC;
 }
