@@ -1,0 +1,163 @@
+section#feedback .container{
+    position:relative;
+}
+
+section#feedback .container img{
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform: translate(-100%,-50%);
+}
+
+section#feedback .feedback-carousel{
+    margin:5rem auto 0;
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+
+section#feedback .feedback-carousel .carousel{
+    width:73%;
+    display: flex;
+    gap:3.5rem;
+    overflow-x: scroll;
+}
+
+.feedback-carousel .carousel::-webkit-scrollbar{
+    background-color:transparent;
+    height: 12px;
+    padding-top: 1rem;
+    
+}
+.feedback-carousel .carousel::-webkit-scrollbar-thumb{
+    border:3px solid var(--background-page);
+    background-color: var(--gray-text-color);
+    border-radius: 10px;
+}
+
+.carousel .feedback-card-box{
+    width:51rem;
+    display: flex;
+    align-items: center;
+}
+
+.carousel .feedback-card-box>img{
+    width:40rem;
+    height:41rem;
+    filter:brightness(45%);
+    border-radius: 10px;
+}
+
+.carousel .feedback-card-box .feedback-card{
+    position: relative;
+    transform: translateX(-50%);
+    padding:4rem 3rem;
+    background-color: var(--secondary-color);
+    min-width: 35rem;
+    height: 31rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.feedback-card h5{
+    color:var(--light-text-color);
+    font-size:3.8rem;
+    text-align: center;
+    font-family: var(--secondary-font);
+}
+
+.feedback-card p{
+    color:var(--light-secondary-text-color);
+    font-size:1.6rem;
+    text-align: center;
+}
+
+.feedback-carousel .carousel-block{
+    width:27%;
+    height: 22rem;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+.feedback-carousel .carousel-block h4{
+    color:var(--light-text-color);
+    font-family: var(--secondary-font);
+    font-size: 4rem;
+}
+
+.feedback-carousel .carousel-block p{
+    font-size: 2rem;
+    margin-bottom:1rem;
+    text-align: center;
+}
+
+.feedback-carousel .carousel-block img{
+    cursor: pointer;
+    margin:.5rem;
+}
+
+@media (min-width:1500px){
+    section#feedback .feedback-carousel{
+        width: 128rem;
+    }
+}
+
+@media (max-width:1200px){
+    section#feedback .container img{
+        transform: translate(50%,-50%);
+    }
+    .feedback-carousel .carousel-block h4{
+        font-size:3.5rem;
+    }
+}
+
+@media (max-width:930px){   
+    section#feedback .feedback-carousel{
+        margin:1.6rem 0 5% 0;
+    }
+    
+    section#feedback .feedback-carousel .carousel{
+        width:100%;
+        gap:2rem;
+    }
+    
+    .carousel .feedback-card-box{
+        min-width:24rem;
+        height: 21rem;
+        width:unset;
+        display: flex;
+        align-items: center;
+    }
+    
+    .carousel .feedback-card-box>img,.feedback-carousel .carousel-block{
+        display: none;
+    }
+    
+    .carousel .feedback-card-box .feedback-card{
+        transform: unset;
+        padding:2rem;
+        width: 100%;
+        height: 100%;
+        min-width: unset;
+    }
+    
+    .feedback-card h5{
+        font-size:2rem;
+    }
+    
+    .feedback-card p{
+        font-size:1.4rem;
+    }
+
+    .feedback-card img{
+        width:3.3rem;
+        height: 3.3rem;
+    }
+}

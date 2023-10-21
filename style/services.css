@@ -1,7 +1,7 @@
 section#services .services-carousel{
     width:100%;
-    height: 45rem;
-    margin:2rem auto;
+    height: 47.6rem;
+    margin:5rem auto 0;
     position: relative;
 }
 
@@ -50,19 +50,19 @@ section#services .services-carousel .carousel-block{
     left:13.5rem;
 }
 
-.carousel{
+.background-carousel .carousel{
     display: flex;
     gap:3.5rem;
     overflow-x:scroll;
 }
 
-.carousel::-webkit-scrollbar{
+.background-carousel .carousel::-webkit-scrollbar{
     background-color:transparent;
     height: 12px;
     padding-top: 1rem;
     
 }
-.carousel::-webkit-scrollbar-thumb{
+.background-carousel .carousel::-webkit-scrollbar-thumb{
     border:3px solid var(--tertiary-color);
     background-color: var(--gray-text-color);
     border-radius: 10px;
@@ -103,11 +103,11 @@ section#services .services-carousel .carousel-block{
     }
 }
 
-@media (max-width:800px){
+@media (max-width:930px){
     section#services .services-carousel{
         width:100%;
-        margin:0;
-        height: 21.6rem;
+        margin:1.6rem 0 0 0;
+        height: 21.8rem;
     }
 
     .carousel-block,.background-carousel>img{
@@ -118,7 +118,7 @@ section#services .services-carousel .carousel-block{
         width: 100%;
         padding:3rem 0 3rem 5%;
         left: 0;
-        top:1.5rem;
+        top:0;
     }
     .carousel{
         gap:2rem;

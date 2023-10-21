@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
-    <link rel="shortcut icon" href="./assets/IMAGEM.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/about-img.svg" type="image/x-icon">
     <title>AUTWARE</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
                         <li><a onclick="closeMenu()" href="#home">Home</a></li>
                         <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
                         <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
-                        <li><a onclick="closeMenu()" href="#services">Feedback</a></li>
+                        <li><a onclick="closeMenu()" href="#feedback">Feedback</a></li>
                         <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
                     </ul>
                 </div>
@@ -118,7 +118,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="feedback">
         <div class="container">
             <img src="./assets/3.svg" alt="Number-three" class="number" draggable="false">
             <h2 class="title-section">Clientes satisfeitos</h2>
@@ -126,12 +126,14 @@
         </div>
 
         <div class="feedback-carousel">
-            <div class="carousel">
+            <div class="carousel" scrollLeft="1000">
                 <div class="feedback-card-box">
                     <img src="./assets/feedback-img.jpg" alt="Feedback-img" draggable="false">
                     <div class="feedback-card">
-                        <h5>Nick Weimann</h5>
-                        <p>District Directives Representative</p>
+                        <div class="client">
+                            <h5>Nick Weimann</h5>
+                            <p>District Directives Representative</p>
+                        </div>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia c.</p>
                         <div class="avaliation">
                             <img src="./assets/star.svg" alt="star" draggable="false">
@@ -145,8 +147,10 @@
                 <div class="feedback-card-box">
                     <img src="./assets/feedback-img.jpg" alt="Feedback-img" draggable="false">
                     <div class="feedback-card">
-                        <h5>Nick Weimann</h5>
-                        <p>District Directives Representative</p>
+                        <div class="client">
+                            <h5>Nick Weimann</h5>
+                            <p>District Directives Representative</p>
+                        </div>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia c.</p>
                         <div class="avaliation">
                             <img src="./assets/star.svg" alt="star" draggable="false">
@@ -160,8 +164,10 @@
                 <div class="feedback-card-box">
                     <img src="./assets/feedback-img.jpg" alt="Feedback-img" draggable="false">
                     <div class="feedback-card">
-                        <h5>Nick Weimann</h5>
-                        <p>District Directives Representative</p>
+                        <div class="client">
+                            <h5>Nick Weimann</h5>
+                            <p>District Directives Representative</p>
+                        </div>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia c.</p>
                         <div class="avaliation">
                             <img src="./assets/star.svg" alt="star" draggable="false">
@@ -173,10 +179,12 @@
                     </div>
                 </div>
                 <div class="feedback-card-box">
-                    <img src="./assets/feedback-img.jpg" alt="Feedback-img">
+                    <img src="./assets/feedback-img.jpg" alt="Feedback-img" draggable="false">
                     <div class="feedback-card">
-                        <h5>Nick Weimann</h5>
-                        <p>District Directives Representative</p>
+                        <div class="client">
+                            <h5>Nick Weimann</h5>
+                            <p>District Directives Representative</p>
+                        </div>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia c.</p>
                         <div class="avaliation">
                             <img src="./assets/star.svg" alt="star" draggable="false">
@@ -191,11 +199,36 @@
             <div class="carousel-block">
                 <h4>Impressões</h4>
                 <p>Veja a reação dos nossos clientes</p>
-                <img src="./assets/left-arrow.svg" alt="Flexa-esquerda" class="left-arrow" draggable="false">
-                <img src="./assets/right-arrow.svg" alt="Flexa-direita" class="right-arrow" draggable="false">
+                <div class="arrows">
+                    <img src="./assets/left-arrow.svg" alt="Flexa-esquerda" class="left-arrow" draggable="false">
+                    <img src="./assets/right-arrow.svg" alt="Flexa-direita" class="right-arrow" draggable="false">
+                </div>
             </div>
         </div>
     </section>
+
+    <section id="contacts">
+        <div class="container">
+            <div class="contacts-text">
+                <img src="./assets/4.svg" alt="Number-four" class="number" draggable="false">
+                <h2 class="title-section">Contate-nos</h2>
+                <h3 class="subtitle-section">Juntos, Resolvemos Seus Problemas de <span>comunicação</span></h3>
+            </div>
+            <div class="form">
+                <form action="#">
+                    <h4>Relate seu problema</h4>
+                    <input type="text" name="name" id="name" placeholder="Nome">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <textarea name="message" id="message" placeholder="Mensagem"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
 
     <script defer src="./js/menu.js"></script>
     <script defer src="./js/carousel.js"></script>

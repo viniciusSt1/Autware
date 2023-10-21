@@ -17,15 +17,16 @@ html {
     
     --title-font: 'Kanit', sans-serif;
     --subtitle-font: 'Montserrat', sans-serif;
+    --secondary-font:'Nebas Neue', sans-serif;
     --text-font: 'Roboto', sans-serif;
 
     --light-text-color: #FFFFFF;
-    --dark-text-color: #000000;
     --light-secondary-text-color: #D1D1D1;
+    --dark-text-color: #000000;
     --gray-text-color:#585858;
 
     --primary-color: #A62047;
-    --secondary-color: #1F1FA9;
+    --secondary-color: #00002F;
     --tertiary-color: #181F2E;
     --background-page:#FAFAFA;
 }

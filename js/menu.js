@@ -1,5 +1,4 @@
 const header = document.querySelector("header");
-const logo = document.querySelector("header .logo img");
 
 window.addEventListener('scroll', onScroll);
 
@@ -10,10 +9,8 @@ function onScroll() {
 function activeHeader() {
     if (scrollY > 50) {
         header.classList.add("active");
-        logo.style.width = "18rem";
     } else {
         header.classList.remove("active");
-        logo.style.width = "25rem";
     }
 }
 

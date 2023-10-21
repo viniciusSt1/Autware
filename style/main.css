@@ -3,6 +3,9 @@
 @import url("home.css");
 @import url("about.css");
 @import url("services.css");
+@import url("feedback.css");
+@import url("contacts.css");
+@import url("footer.css");
 
 body{
     font-family: var(--text-font);
@@ -84,5 +87,9 @@ h3.subtitle-section::after{
         font-size: 2.4rem;
         line-height: 3rem;
         margin-left: 5%;
+    }
+
+    .carousel::-webkit-scrollbar{
+        height:9px !important;
     }
 }
