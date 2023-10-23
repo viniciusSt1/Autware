@@ -1,3 +1,7 @@
+section#feedback{
+    position: relative;
+}
+
 section#feedback .container{
     position:relative;
 }
@@ -10,6 +14,7 @@ section#feedback .container img{
 }
 
 section#feedback .feedback-carousel{
+    position: relative;
     margin:5rem auto 0;
     width:100%;
     display: flex;
@@ -52,7 +57,7 @@ section#feedback .feedback-carousel .carousel{
     position: relative;
     transform: translateX(-50%);
     padding:4rem 3rem;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color2);
     min-width: 35rem;
     height: 31rem;
     display: flex;
@@ -64,7 +69,7 @@ section#feedback .feedback-carousel .carousel{
 
 .feedback-card h5{
     color:var(--light-text-color);
-    font-size:3.8rem;
+    font-size:4rem;
     text-align: center;
     font-family: var(--secondary-font);
 }
@@ -120,7 +125,8 @@ section#feedback .feedback-carousel .carousel{
 
 @media (max-width:930px){   
     section#feedback .feedback-carousel{
-        margin:1.6rem 0 5% 0;
+        width: 95%;
+        margin:1.6rem 0 0 5%;
     }
     
     section#feedback .feedback-carousel .carousel{

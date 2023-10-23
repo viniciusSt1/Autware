@@ -151,3 +151,9 @@ nav#autoNav .open-menu{
         line-height: 4rem;
     }
 }
+
+@media (max-height:550px){
+    .menu ul{
+        margin-top:10rem;
+    }
+}

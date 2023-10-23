@@ -66,9 +66,9 @@ section#about .about__us__text a {
 }
 
 section#about .about__us__text a:hover{
-    border-color:var(--secondary-color);
+    border-color:var(--secondary-color2);
     transition:.4s;
-    background:linear-gradient(#ffffff ,rgba(50,50,50,0.1), #ffffff);
+    background:linear-gradient(transparent ,rgba(50,50,50,0.1), transparent);
 }
 
 section#about .about__us__images{

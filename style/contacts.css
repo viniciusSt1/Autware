@@ -1,4 +1,129 @@
+section#contacts{
+    padding-top:7rem;
+}
+
 section#contacts .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap:3.5rem;
+}
+
+section#contacts .container .contacts-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts-text img{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+.contacts-text h3 span{
+    color:var(--secondary-color1);
+}
+
+section#contacts .container .form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section#contacts .container .form form{
+    background-color: var(--light-text-color);
+    box-shadow: 0 0 10px rgba(100,100,100,0.3);
+    width:100%;
+    padding:2.5rem;
+    margin:2rem 0 -22rem 0;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.form h4{
+    font-size: 3.6rem;
+    font-family: var(--secondary-font);
+    text-align: center;
+}
+
+.form h4 span{
+    color:var(--primary-color);
+}
+
+.form input,.form textarea{
+    width:100%;
+    font-size: 2rem;
+    border-radius: 3px;
+    padding:1rem 1rem 1.5rem 2rem;
+    font-family: var(--inputs-font);
+    border:2px solid var(--gray-text-color);
+    color:var(--gray-text-color);
+    margin-top:2.5rem;
+}
+
+input:focus,textarea:focus{
+    outline: none;
+    border-color:var(--primary-color);
+}
+
+.form button{
+    width:100%;
+    font-size: 2rem;
+    border-radius: 3px;
+    font-family: var(--inputs-font);
+    text-align: center;
+    color:var(--dark-text-color);
+    background-color: var(--primary-color);
+    border:none;
+    padding:1.5rem;
+    margin-top:2.5rem;
+    cursor: pointer;
+}
+
+.form textarea{
+    height: 18rem;
+    resize: none;
+}
+
+@media (max-width:840px){
+    section#contacts{
+        padding-top:0;
+    }
+
+    section#contacts .container{
+        grid-template-columns: 1fr;
+    }
+
+    section#contacts .container .contacts-text h3{
+        text-align: center;
+        margin:0 auto;
+    }
+
+    section#contacts .container .form form{
+        box-shadow: 0 0 12px rgba(100,100,100,0.2);
+        width:90%;
+        padding:2rem;
+        margin:0;
+        border-bottom:3px solid var(--primary-color);
+    }
+    
+    .form h4{
+        font-size: 2.5rem;
+    }
+    
+    .form input,.form textarea{
+        font-size: 1.4rem;
+        padding:1rem 1rem 1.1rem 1.5rem;
+        margin-top:1.5rem;
+    }
+    
+    .form button{
+        margin-top:1.5rem;
+        font-size: 2rem;
+    }
+    
+    .form textarea{
+        height: 11rem;
+    }
 }

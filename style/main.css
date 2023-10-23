@@ -10,6 +10,7 @@
 body{
     font-family: var(--text-font);
     background-color: var(--background-page);
+    overflow-x: hidden;
 }
 
 .container {
@@ -23,7 +24,7 @@ a{
     text-decoration: none;
 }
 
-section:not(:first-of-type){
+section:not(:first-of-type),footer{
     width:100%;
     margin-top:7rem;
 }
@@ -56,13 +57,31 @@ h3.subtitle-section{
     max-width: 68rem;
 }
 
-h3.subtitle-section::after{
+h3.subtitle-section.line::after{
     content: '';
     background-color:var(--primary-color);
     display: block;
     height: 3px;
     width: 30%;
     margin:.5rem 0;
+}
+
+.background-vector1{
+    position: absolute;
+    bottom:0;
+    z-index: -2;
+    width: 100%;
+    min-height: 190rem;
+    object-fit: cover;
+}
+
+.background-vector2{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    object-fit: cover;
+    bottom:-7rem;
+    max-height: 80rem;
 }
 
 @media (max-width:930px){
@@ -91,5 +110,9 @@ h3.subtitle-section::after{
 
     .carousel::-webkit-scrollbar{
         height:9px !important;
+    }
+
+    .background-vector{
+        display: none;
     }
 }

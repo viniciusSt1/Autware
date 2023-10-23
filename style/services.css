@@ -98,7 +98,7 @@ section#services .services-carousel .carousel-block{
 }
 
 @media (min-width:1500px){
-    section#services .services-carousel{
+    section#services .services-carousel,.background-vector1{
         width: 128rem;
     }
 }
