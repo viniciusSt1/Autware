@@ -83,6 +83,7 @@ section#about .about__us__images img.number{
 
 section#about .about__us__images img:last-of-type {
     width: 50rem;
+    height: auto;
 }
 
 @media (max-width:930px){
@@ -112,5 +113,6 @@ section#about .about__us__images img:last-of-type {
 
     section#about .about__us__images img:last-of-type{
         width: 30rem;
+        height: auto;
     }
 }

@@ -27,18 +27,18 @@ section#contacts .container .contacts-text{
 
 section#contacts .container .form{
     width: 100%;
-    display: flex;
-    justify-content: center;
+    max-width: 47rem;
+    justify-self: end;
+    z-index: 10;
 }
 
 section#contacts .container .form form{
     background-color: var(--light-text-color);
     box-shadow: 0 0 10px rgba(100,100,100,0.3);
     width:100%;
-    padding:2.5rem;
+    padding:4rem 2.5rem 3rem 2.5rem;
     margin:2rem 0 -22rem 0;
     border-radius: 10px;
-    z-index: 10;
 }
 
 .form h4{
@@ -100,9 +100,14 @@ input:focus,textarea:focus{
         margin:0 auto;
     }
 
+    section#contacts .container .form{
+        justify-self: center;
+        width:90%;
+        max-width: 36rem;
+    }
+
     section#contacts .container .form form{
         box-shadow: 0 0 12px rgba(100,100,100,0.2);
-        width:90%;
         padding:2rem;
         margin:0;
         border-bottom:3px solid var(--primary-color);

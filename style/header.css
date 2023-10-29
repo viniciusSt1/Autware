@@ -74,22 +74,14 @@ nav#autoNav .open-menu{
         width: 18rem;
     }
 
-    nav#autoNav .open-menu{
+    nav#autoNav .open-menu, nav#autoNav .close-menu{
         display: block;
         position: fixed;
         bottom: 50%;
         right: 3rem;
         transform:translateY(50%);
-
         border: none;
         background-color: transparent;
-    }
-
-    nav#autoNav .close-menu{
-        background:transparent;
-        border: none;
-        bottom: 50%;
-        right: 2rem;
     }
 
     body.menu-expanded {
