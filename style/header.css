@@ -20,6 +20,24 @@ header.active {
 
 header a {
     color: var(--light-text-color);
+    position: relative;
+}
+
+header a.active::after{
+    width: 80%;
+    left:10%;
+    transition: width 0.8s, left 0.8s;
+}
+
+header a::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left:50%;
+    bottom:-5px;
+    transition: width 0.3s, left 0.3s;
 }
 
 header .container {
@@ -90,6 +108,10 @@ nav#autoNav .open-menu{
 
     header nav ul li a {
         font-size: 2.3rem;
+    }
+
+    header a.active{
+        color:var(--light-secondary-text-color);
     }
     
     .menu,
